@@ -2,12 +2,10 @@ header {
 
   width: 100%;
   color: $white;
-  background-color: $gatsby-purple;
+  background-color: $light-blue-900;
 
   .container {
-    display: flex;
-    justify-content: space-between;
-    height: 2.5em;
+    text-align: center;
     line-height: 2.5em;
   }
 

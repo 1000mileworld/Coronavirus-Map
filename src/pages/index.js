@@ -28,8 +28,9 @@ const IndexPage = () => {
   async function mapEffect({leafletElement: map}) {
     let response;
 
+    //https://corona.lmao.ninja/countries
     try {
-      response = await axios.get('https://corona.lmao.ninja/countries');
+      response = await axios.get('https://gist.githubusercontent.com/1000mileworld/157eb3485ad861f83dc50716531892c4/raw/9b5b58a6558edbf1a33f355a77c10eaf21d3a404/coronavirus%2520stat%25202020-04-08');
     } catch(e) {
       console.log(`Failed to fetch countries: ${e.message}`, e);
       return;
@@ -124,18 +125,14 @@ const IndexPage = () => {
   return (
     <Layout pageName="home">
       <Helmet>
-        <title>Home Page</title>
+        <title>Coronavirus Tracker</title>
       </Helmet>
 
       <Map {...mapSettings}/>
 
       <Container type="content" className="text-center home-start">
-        <h2>Still Getting Started?</h2>
-        <p>Run the following in your terminal!</p>
-        <pre>
-          <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-        </pre>
-        <p className="note">Note: Gatsby CLI required globally for the above command</p>
+        <h2>Wordwide Coronavirus/COVID-19 Case Tracker</h2>
+        <p>Select data from past saved data or track cases in real time:</p>
       </Container>
     </Layout>
   );

@@ -78,3 +78,12 @@
   }
 
 }
+
+@media (min-width: 1024px){
+  .page-home {
+    .map,
+    .map-base {
+      height: 65vh;
+    }
+  }
+}
