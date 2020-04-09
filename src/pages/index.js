@@ -132,7 +132,7 @@ const IndexPage = () => {
 
       <Container type="content" className="text-center home-start">
         <h2>Wordwide Coronavirus/COVID-19 Case Tracker</h2>
-        <p>Select data from past saved data or track cases in real time:</p>
+        <p>Select from past saved data or get most recent:</p>
       </Container>
     </Layout>
   );
