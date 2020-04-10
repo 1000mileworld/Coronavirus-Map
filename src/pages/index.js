@@ -29,8 +29,9 @@ const IndexPage = () => {
     let response;
 
     //https://corona.lmao.ninja/countries
+    //04-08: https://gist.githubusercontent.com/1000mileworld/157eb3485ad861f83dc50716531892c4/raw/9b5b58a6558edbf1a33f355a77c10eaf21d3a404/coronavirus%2520stat%25202020-04-08
     try {
-      response = await axios.get('https://gist.githubusercontent.com/1000mileworld/157eb3485ad861f83dc50716531892c4/raw/9b5b58a6558edbf1a33f355a77c10eaf21d3a404/coronavirus%2520stat%25202020-04-08');
+      response = await axios.get('https://gist.githubusercontent.com/1000mileworld/0f12e488ac84b9bdc7e29638be62454f/raw/a5fa43da7adb5b7f351f3a81354e6eebcc05a570/Coronavirus%2520stat%25202020-04-09');
     } catch(e) {
       console.log(`Failed to fetch countries: ${e.message}`, e);
       return;
@@ -133,6 +134,11 @@ const IndexPage = () => {
       <Container type="content" className="text-center home-start">
         <h2>Wordwide Coronavirus/COVID-19 Case Tracker</h2>
         <p>Select from past saved data or get most recent:</p>
+        <select className="select-css">
+          <option value="0">Most recent</option>
+          <option value="1">April 8, 2020</option>
+          <option value="2">April 9, 2020</option>
+        </select>
       </Container>
     </Layout>
   );
