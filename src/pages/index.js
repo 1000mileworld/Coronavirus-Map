@@ -7,7 +7,7 @@ import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Map from 'components/Map';
 
-//import 'assets/stylesheets/application.scss'; //imported by Layout
+//import 'assets/stylesheets/application.scss'; //imported by Layout.js
 
 const LOCATION = {
   lat: 0,
