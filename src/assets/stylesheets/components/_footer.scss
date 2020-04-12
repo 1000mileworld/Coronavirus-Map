@@ -8,8 +8,15 @@ footer .container {
   background-color: $dark-black;
 
   p {
-    font-size: 1em;
+    font-size: 1.1em;
     margin: 0;
+  }
+  a {
+    text-decoration: none;
+    color: hsl(60, 100%, 80%);
+    &:hover{
+      color: hsl(60, 100%, 60%);
+    }
   }
 
 }
