@@ -135,6 +135,8 @@ class IndexPage extends React.Component  {
     const token = '';
 
     //map.setView([51.505, -0.09], 13);
+    map.options.minZoom = 1;
+
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
       attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
       maxZoom: 18,
@@ -156,14 +158,14 @@ class IndexPage extends React.Component  {
     return (
       <Layout pageName="home">
         <Helmet>
-          <title>Coronavirus Tracker</title>
+          <title>COVID-19 Tracker</title>
         </Helmet>
 
         {/* Need key attribute to force component to rerender on state update (React uses the key prop to understand the component-to-DOM Element relation) */}
         <Map {...this.state.mapSettings} key={this.state.option}/> 
 
         <Container type="content" className="text-center home-start">
-          <h2>Wordwide Coronavirus/COVID-19 Case Tracker</h2>
+          <h2>Wordwide Coronavirus/COVID-19 Map</h2>
           <p>Select from past saved data or get most recent:</p>
           <select id="dropdown" className="select-css" onChange={this.handleChange}>
             <option value="0">Most recent</option>
