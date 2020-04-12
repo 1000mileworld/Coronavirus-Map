@@ -158,7 +158,9 @@ class IndexPage extends React.Component  {
     return (
       <Layout pageName="home">
         <Helmet>
-          <title>COVID-19 Tracker</title>
+          <title>COVID-19 Map</title>
+          <meta name="author" content="Joe Liang"/>
+          <meta name="description" content="Coronavirus (COVID-19) map that tracks cases worldwide by country."/>
         </Helmet>
 
         {/* Need key attribute to force component to rerender on state update (React uses the key prop to understand the component-to-DOM Element relation) */}
