@@ -1,1 +1,1 @@
-Coronavirus Map Tracker
+Coronavirus Map Tracker built using Gatsby and Leaflet
